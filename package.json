@@ -1,0 +1,45 @@
+{
+  "name": "minista-project",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "minista",
+    "build": "minista build",
+    "preview": "minista preview",
+    "lint": "eslint 'src/**/*.{ts,tsx,js,jsx}'",
+    "lint:fix": "eslint 'src/**/*.{ts,tsx,js,jsx}' --fix",
+    "format": "prettier --write 'src/**/*.{ts,tsx,js,jsx,css,scss}'",
+    "format:check": "prettier --check 'src/**/*.{ts,tsx,js,jsx,css,scss}'",
+    "style": "stylelint 'src/**/*.{css,scss}'",
+    "style:fix": "stylelint 'src/**/*.{css,scss}' --fix"
+  },
+  "prettier": {
+    "semi": false
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
+    "@tailwindcss/typography": "^0.5.16",
+    "@types/react": "^18.2.16",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "^16.3.0",
+    "minista": "^3.1.12",
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sass": "^1.89.2",
+    "stylelint": "^16.23.0",
+    "stylelint-config-recess-order": "^7.1.0",
+    "stylelint-config-standard": "^39.0.0",
+    "tailwindcss": "^4.1.11",
+    "typescript": "^5.1.6"
+  }
+}

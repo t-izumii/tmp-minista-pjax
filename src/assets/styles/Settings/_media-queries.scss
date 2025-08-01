@@ -1,0 +1,13 @@
+@use "./layout" as *;
+
+@mixin pc {
+  @media screen and (min-width: #{$min-pc-width}) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: #{$min-pc-width - 1px}) {
+    @content;
+  }
+}

@@ -1,0 +1,38 @@
+:root {
+  --font-default: "San Francisco", meiryo, sans-serif;
+  --vh: 1vh;
+  --100vh: 100svh;
+  --100vw: 100vw;
+  --window-width: tan(atan2(var(--100vw), 1px));
+  --px: calc(16px * var(--window-width) / 1440);
+  --fz: 1rem;
+  --leading-trim: calc((1em - 1lh) / 2);
+  --grid: calc(1 / 24 * var(--100vw));
+
+  @media screen and (width <= 960px) {
+    :root {
+      --px: calc(16px * var(--window-width) / 375);
+      --grid: calc(1 / 11 * var(--100vw));
+    }
+  }
+}
+
+html {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow-y: scroll;
+  font-size: calc(10px * var(--window-width) / 1440);
+  text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media screen and (width <= 960px) {
+  html {
+    font-size: calc(10px * var(--window-width) / 375);
+  }
+}
+
+body {
+  font-family: var(--font-default);
+}
