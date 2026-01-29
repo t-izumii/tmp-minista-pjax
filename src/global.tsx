@@ -13,11 +13,13 @@ export default function ({ url, title, description, children }: GlobalProps) {
         <script type="module" src="/src/assets/scripts/index.ts" />
       </Head>
       <Header />
-      {url === "/" ? (
-        <div className="home">{children}</div>
-      ) : (
-        <div>{children}</div>
-      )}
+      <div data-pjax-container>
+        {url === "/" ? (
+          <div className="home">{children}</div>
+        ) : (
+          <div>{children}</div>
+        )}
+      </div>
       <Footer />
     </>
   )

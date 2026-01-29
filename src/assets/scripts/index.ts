@@ -1,4 +1,5 @@
-window.addEventListener("load", function () {
-  console.log("load")
-  console.log(document.querySelector(".c-kv"))
-})
+import SimplePJAX from "./pjax/_index"
+
+// 使用開始
+const pjax = new SimplePJAX()
+pjax.init()

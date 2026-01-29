@@ -14,7 +14,7 @@ export default function ({ url, title, description, children }: PageProps) {
     <>
       <Head></Head>
       <Kv></Kv>
-      <h1 className="mt-[1rem] text-blue-500 font-bold">TailwindCSS Test</h1>
+      <h1 className="mt-[1rem] text-blue-500 font-bold">page Index</h1>
     </>
   )
 }
